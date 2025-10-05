@@ -78,7 +78,7 @@ const Notes = () => {
 
       {/* List of Notes */}
       <div className="my-2">
-        <h3 className="text-primary">All Notes</h3>
+        <h3 className="text-danger">All Notes</h3>
         {allNotes.map((n) => (
           <div className="p-2 border mb-2" key={n.id}>
             <div className="d-flex justify-content-end">
