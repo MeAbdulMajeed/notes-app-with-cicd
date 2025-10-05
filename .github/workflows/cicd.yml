@@ -33,7 +33,7 @@ jobs:
 
       # 5️⃣ Run tests
       - name: Run tests
-        run: npm test -- --watchAll=false
+        run: npm test
 
       # 6️⃣ Build project
       - name: Build
