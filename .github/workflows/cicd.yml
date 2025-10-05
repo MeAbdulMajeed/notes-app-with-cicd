@@ -17,7 +17,7 @@ jobs:
     steps:
       # 1️⃣ Checkout code
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # 2️⃣ Install dependencies
       - name: Install dependencies
@@ -41,14 +41,14 @@ jobs:
 
       # 7️⃣ Upload build artifact
       - name: Upload build artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: react-build
           path: dist/
 
       # 8️⃣ Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
